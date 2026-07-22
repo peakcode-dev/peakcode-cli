@@ -1,10 +1,10 @@
-# peakcode
+# peakcode-cli
 
-AI coding agent for the terminal, written in Rust.
+Terminal client (TUI) for peakcode, the AI coding agent, written in Rust.
 
-peakcode is a command-line coding assistant - it runs in your terminal, reads your
-codebase, calls an LLM (OpenAI first, more providers later), and executes tools to edit
-files, run commands, and answer questions about your project. It is modeled on
+This is the **peakcode-cli** repository: the terminal client (binary `peakcode`). It is an
+access point to the peakcode engine (`peakcode-core`); a future `peakcode-daemon` will host
+long-running agent sessions so agents survive the CLI closing. It is modeled on
 [opencode](https://opencode.ai).
 
 The terminal background defaults to `none`: peakcode never forces a background color and

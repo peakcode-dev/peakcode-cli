@@ -8,12 +8,14 @@ is `none` (the terminal decides the background, peakcode never forces one).
 
 ## Naming convention
 
-The project name is **`peakcode`**, always lowercase, never `Peakcode`, `PeakCode`,
+The product name is **`peakcode`**, always lowercase, never `Peakcode`, `PeakCode`,
 `PEAKCODE`, or any other casing. This applies to docs, code comments, commit messages,
 PR descriptions, READMEs, CHANGELOGs, CLI output, binary names, and prose everywhere.
 
-The binary is `peakcode`, the crate is `peakcode`, the config directory is `peakcode`.
-Repo slugs already follow this; extend it to all prose.
+This repository is the **terminal client**: repo slug `peakcode-cli`, binary `peakcode`.
+Sibling repos in the ecosystem: `peakcode-core` (the UI-agnostic engine this client
+depends on), and the planned `peakcode-daemon` / `peakcode-server` / `peakcode-desktop`.
+Keep repo slugs lowercase; extend lowercase to all prose.
 
 ## ALWAYS `git pull` before starting work
 
